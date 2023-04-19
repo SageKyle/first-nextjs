@@ -1,7 +1,9 @@
+import avatar from 'images/avatar.jpg';
+import avatar2 from 'images/profile.png';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import utilStyles from '../styles/utils.module.css';
+import utilStyles from 'styles/utils.module.css';
 import styles from './layouts.module.css';
 
 const name = 'Paul Saje';
@@ -30,10 +32,10 @@ export default function Layout({ children, home }) {
 					<>
 						<Image
 							priority
-							src="/images/profile.png"
-							className={utilStyles.borderCircle}
-							height={144}
-							width={144}
+							src={avatar}
+							className={`${utilStyles.borderCircle} ${utilStyles.imgStyles}`}
+							height={150}
+							width={150}
 							alt=""
 						/>
 						<h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -43,7 +45,7 @@ export default function Layout({ children, home }) {
 						<Link href="/">
 							<Image
 								priority
-								src="/images/profile.png"
+								src={avatar2}
 								className={utilStyles.borderCircle}
 								height={108}
 								width={108}
