@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
 				<link rel="icon" href="/favicon.ico" />
 				<meta
 					name="description"
-					content="Learn how to build a personal website using Next.js"
+					content="Trying out NextJS for the first time by building a blog"
 				/>
 				<meta
 					property="og:image"
@@ -53,7 +53,7 @@ export default function Layout({ children, home }) {
 							/>
 						</Link>
 						<h2 className={utilStyles.headingLg}>
-							<Link href="/" className={utilStyles.colorInherit}>
+							<Link href="/about" className={utilStyles.colorInherit}>
 								{name}
 							</Link>
 						</h2>
